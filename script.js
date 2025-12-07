@@ -1,54 +1,22 @@
-// Mobile menu toggle
+// Mobile Navigation Toggle
 const menuBtn = document.getElementById("menu-btn");
 const navMenu = document.getElementById("nav-menu");
 
 menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-  navMenu.style.display = navMenu.style.display === "flex" ? "none" : "flex";
+    navMenu.querySelector("ul").style.display =
+        navMenu.querySelector("ul").style.display === "flex" ? "none" : "flex";
 });
 
-// Fade-in on scroll
+// Fade-in Animation
 const sections = document.querySelectorAll(".section");
 
 window.addEventListener("scroll", () => {
-  const triggerBottom = window.innerHeight / 5 * 4;
-  sections.forEach(section => {
-    const sectionTop = section.getBoundingClientRect().top;
-    if (sectionTop < triggerBottom) {
-      section.classList.add("visible");
-    }
-  });
-});
+    let trigger = window.innerHeight * 0.8;
 
-// Typing animation
-const typingText = ["IT Support Engineer", "Desktop Support", "Technical Support"];
-let i = 0;
-let j = 0;
-let currentText = "";
-let isDeleting = false;
-const typingSpeed = 150;
-const deletingSpeed = 80;
-
-function type() {
-  if (!isDeleting && j < typingText[i].length) {
-    currentText += typingText[i][j];
-    j++;
-    document.getElementById("typing").textContent = currentText;
-    setTimeout(type, typingSpeed);
-  } else if (isDeleting && j > 0) {
-    currentText = currentText.slice(0, -1);
-    j--;
-    document.getElementById("typing").textContent = currentText;
-    setTimeout(type, deletingSpeed);
-  } else {
-    isDeleting = !isDeleting;
-    if (!isDeleting) {
-      i = (i + 1) % typingText.length;
-    }
-    setTimeout(type, 1000);
-  }
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  type();
+    sections.forEach(section => {
+        let top = section.getBoundingClientRect().top;
+        if (top < trigger) {
+            section.classList.add("visible");
+        }
+    });
 });
