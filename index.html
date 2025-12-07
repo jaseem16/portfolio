@@ -1,93 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mohamed Jaseem Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Jaseem | IT Support Engineer</title>
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation -->
-    <header>
-        <div class="logo">MJ</div>
-        <div class="menu-btn" id="menu-btn"><i class="fas fa-ellipsis-h"></i></div>
-        <nav id="nav-menu">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="E:\html1\jaseem\assets\CV.pdf.pdf" target="_blank">CV</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Home Section -->
-    <section id="home" class="section home">
-        <h1>Hello, I’m Mohamed Jaseem</h1>
-        <h2>Turning Ideas into Web Experiences</h2>
-        <p>I'm a Software Engineer passionate about building responsive and user-friendly websites using modern web technologies.</p>
-        <a href="mailto:jaseemhaja@gmail.com" class="btn">Say Hello</a>
-    </section>
+  <!-- Header -->
+  <header>
+    <div class="logo">MJ</div>
+    <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="#home" class="nav-item">Home</a></li>
+        <li><a href="#about" class="nav-item">About</a></li>
+        <li><a href="#skills" class="nav-item">Skills</a></li>
+        <li><a href="#work" class="nav-item">Experience</a></li>
+        <li><a href="#contact" class="nav-item">Contact</a></li>
+        <li><a href="assets/Mohamed_Jaseem_CV.pdf" target="_blank" class="cv-btn">Download CV</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <h2>About Me</h2>
-        <div class="about-container">
-            <div class="about-text">
-                <p>As a skilled Software Engineer with one year of experience in the field, I have a proven record of designing and developing innovative web solutions. I have worked on creating and designing web applications in the tech industry, focusing on functionality and user experience. My core skills include Python, MySQL, E-commerce, and WordPress development.</p>
-            </div>
-            <div class="about-image">
-                <img src="E:\html1\jaseem\assets\your-image.jpg.jpg" alt="Mohamed Jaseem">
-            </div>
-        </div>
-    </section>
+  <!-- Home Section -->
+  <section id="home" class="section home">
+    <div class="home-content">
+      <h1>Hello, I'm <span class="highlight">Mohamed Jaseem</span></h1>
+      <h2>I am <span id="typing"></span></h2>
+      <p>I help businesses solve technical issues, improve system performance, and deliver seamless IT support experiences.</p>
+      <a href="#contact" class="btn">Say Hello</a>
+    </div>
+    <div class="home-image">
+      <img src="assets/profile.png" alt="Mohamed Jaseem">
+    </div>
+  </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section education">
-        <h2>Education</h2>
-        <div class="edu-container">
-            <div class="edu-item">
-                <h3>Master of Computer Application (2022–2024)</h3>
-                <p>Hindusthan College of Arts and Science, Bharathiar University, Coimbatore, Tamil Nadu, India</p>
-                <p>Percentage: 81%</p>
-            </div>
-            <div class="edu-item">
-                <h3>Bachelor of Computer Application (2019–2022)</h3>
-                <p>Jamal Mohamed College of Arts and Science, Bharathidasan University, Thiruchirapalli, Tamil Nadu, India</p>
-                <p>Percentage: 82%</p>
-            </div>
-        </div>
-    </section>
+  <!-- About Section -->
+  <section id="about" class="section about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          I'm an IT Support Engineer with experience in troubleshooting Windows systems, optimizing networks,
+          managing ticketing tools, and providing smooth technical support for end users.
+        </p>
+        <p>
+          Currently based in Abu Dhabi, UAE and open to IT Support, Desktop Support, and Technical Support roles.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="assets/profile2.png" alt="Mohamed Jaseem">
+      </div>
+    </div>
+  </section>
 
-    <!-- Work Section -->
-    <section id="work" class="section work">
-        <h2>Where I've Worked</h2>
-        <div class="work-container">
-            <h3>Software Engineer @ Crescent Infotech (May 2024 – May 2025)</h3>
-            <ul>
-                <li>Designed and developed fully responsive websites using WordPress themes and plugins.</li>
-                <li>Customized website layouts, color schemes, and content to meet client and project requirements.</li>
-                <li>Integrated and managed e-commerce functionalities using WooCommerce.</li>
-                <li>Optimized website performance, security, and SEO for better user experience.</li>
-                <li>Performed regular maintenance, plugin updates, and issue troubleshooting to ensure smooth operation.</li>
-            </ul>
-        </div>
-    </section>
+  <!-- Skills Section -->
+  <section id="skills" class="section skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fas fa-desktop"></i> Windows Troubleshooting</div>
+      <div class="skill-card"><i class="fas fa-network-wired"></i> LAN / Wi-Fi Networking</div>
+      <div class="skill-card"><i class="fas fa-envelope"></i> Outlook & Office 365</div>
+      <div class="skill-card"><i class="fas fa-ticket"></i> Jira / Freshdesk</div>
+      <div class="skill-card"><i class="fas fa-video"></i> AnyDesk / TeamViewer</div>
+      <div class="skill-card"><i class="fas fa-tools"></i> System Maintenance</div>
+      <div class="skill-card"><i class="fas fa-code"></i> HTML / CSS / JS</div>
+      <div class="skill-card"><i class="fas fa-server"></i> Basic Python</div>
+    </div>
+  </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <h2>What's Next?</h2>
-        <h3>Get in Touch</h3>
-        <p>Although I’m currently focusing on improving my skills and gaining more experience, my inbox is always open. Whether you have a question, want to discuss a project, or just want to say hello — feel free to reach out. I’ll do my best to respond as soon as possible.</p>
-        <div class="social-icons">
-            <a href="https://github.com/jaseem16" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jas16" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:jaseemhaja@gmail.com"><i class="fas fa-envelope"></i></a>
-        </div>
-    </section>
+  <!-- Work Section -->
+  <section id="work" class="section work">
+    <h2 class="section-title">Experience</h2>
+    <div class="work-container">
+      <h3>IT Support Engineer – Crescent Infotech (2024–2025)</h3>
+      <ul>
+        <li>Provided Level 1 & 2 support for systems, laptops, printers & networks.</li>
+        <li>Resolved Windows OS issues including boot errors, drivers & updates.</li>
+        <li>Configured Outlook: PST/OST issues, sync problems, login failures.</li>
+        <li>Troubleshot LAN/Wi-Fi, IP configuration, DNS/DHCP issues.</li>
+        <li>Delivered remote support using AnyDesk & TeamViewer.</li>
+        <li>Ensured SLA compliance using Jira & Freshdesk ticketing tools.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>If you'd like to discuss an opportunity or just want to say hello — feel free to contact me!</p>
+    <div class="social-icons">
+      <a href="https://github.com/jaseem16" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/jas16" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:jaseemhaja@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
 </body>
 </html>
