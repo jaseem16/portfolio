@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohamed Jaseem | IT Support Engineer</title>
 
-    <!-- Fonts & Icons -->
+    <!-- FontAwesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
-    <!-- CSS -->
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Script -->
@@ -20,7 +20,10 @@
     <!-- Header -->
     <header>
         <div class="logo">MJ</div>
-        <div class="menu-btn" id="menu-btn"><i class="fas fa-bars"></i></div>
+        <button class="menu-btn" id="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+
         <nav id="nav-menu">
             <ul>
                 <li><a href="#summary">Summary</a></li>
@@ -29,17 +32,24 @@
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#personal">Personal</a></li>
-                <li><a href="#contact" class="contact-btn">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+                <!-- CV Button -->
+                <li>
+                    <a href="assets/Mohamed_Jaseem_CV.pdf" class="cv-btn" download>
+                        <i class="fas fa-file-download"></i> Download CV
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <!-- Hero -->
-    <section class="hero" id="home">
-        <div class="hero-text">
+    <section class="hero">
+        <div class="hero-content">
             <h1>I’m <span class="highlight">Mohamed Jaseem</span></h1>
             <h2>IT Support Engineer</h2>
-            <p>Providing efficient technical support, system troubleshooting, and IT operations for smooth business workflow.</p>
+            <p>Delivering reliable IT support, system troubleshooting, ticketing operations, and user assistance.</p>
             <a href="#contact" class="btn-primary">Hire Me</a>
         </div>
     </section>
@@ -47,9 +57,9 @@
     <!-- Summary -->
     <section id="summary" class="section fade">
         <h2 class="section-title"><i class="fas fa-user"></i> Summary</h2>
-        <p class="big-text">
-            Seeking a challenging position to utilize my skills and abilities in IT support and contribute to the organization’s growth.
-            Skilled in troubleshooting, system management, ticketing tools, and delivering fast technical assistance.
+        <p class="paragraph">
+            Seeking a challenging IT Support role where I can utilize my troubleshooting skills, technical 
+            knowledge, and problem-solving abilities to contribute to organizational success.
         </p>
     </section>
 
@@ -73,17 +83,18 @@
     <section id="experience" class="section fade">
         <h2 class="section-title"><i class="fas fa-briefcase"></i> Experience</h2>
 
-        <div class="experience-card">
+        <div class="card">
             <h3>Crescent InfoTech – IT Support Engineer</h3>
             <p class="duration">May 2024 – May 2025 | Erode, India</p>
+
             <ul>
-                <li>Installed and configured desktops, laptops, printers, and essential software.</li>
-                <li>Troubleshot Windows OS issues including slow performance, drivers, update failures.</li>
-                <li>Handled Outlook setup, email login issues, synchronization problems.</li>
-                <li>Performed LAN/WiFi troubleshooting, IP configuration & connectivity issues.</li>
-                <li>Provided remote support using AnyDesk and TeamViewer.</li>
-                <li>Maintained logs using Freshdesk / Jira.</li>
-                <li>Performed system formatting, backup, and optimization.</li>
+                <li>Installed and configured desktops, laptops & peripherals.</li>
+                <li>Troubleshot Windows OS, boot issues, drivers, and updates.</li>
+                <li>Handled Outlook setup, email syncing & authentication issues.</li>
+                <li>Performed LAN/WiFi troubleshooting and IP configurations.</li>
+                <li>Provided remote assistance using AnyDesk & TeamViewer.</li>
+                <li>Maintained logs via Freshdesk & Jira.</li>
+                <li>Performed data backups, formatting, and optimization.</li>
             </ul>
         </div>
     </section>
@@ -93,22 +104,10 @@
         <h2 class="section-title"><i class="fas fa-certificate"></i> Certifications</h2>
 
         <div class="cert-grid">
-            <div class="cert-card">
-                <h3>CCNA Network Fundamentals</h3>
-                <p>SimpliLearn, 2025</p>
-            </div>
-            <div class="cert-card">
-                <h3>ITIL V4</h3>
-                <p>SimpliLearn, 2025</p>
-            </div>
-            <div class="cert-card">
-                <h3>Python Programming</h3>
-                <p>Accord Info Matrix, 2024</p>
-            </div>
-            <div class="cert-card">
-                <h3>Web Development</h3>
-                <p>Accord Info Matrix, 2024</p>
-            </div>
+            <div class="cert-card"><h3>CCNA Network Fundamentals</h3><p>SimpliLearn — 2025</p></div>
+            <div class="cert-card"><h3>ITIL V4</h3><p>SimpliLearn — 2025</p></div>
+            <div class="cert-card"><h3>Python Programming</h3><p>Accord Info Matrix — 2024</p></div>
+            <div class="cert-card"><h3>Web Development</h3><p>Accord Info Matrix — 2024</p></div>
         </div>
     </section>
 
@@ -116,20 +115,20 @@
     <section id="education" class="section fade">
         <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Education</h2>
 
-        <div class="edu-card">
+        <div class="card">
             <h3>Bharathiar University</h3>
-            <p>MCA – 8.1 CGPA (2022–2024)</p>
+            <p>MCA — 8.1 CGPA (2022–2024)</p>
         </div>
 
-        <div class="edu-card">
+        <div class="card">
             <h3>Bharathidasan University</h3>
-            <p>BCA – 8.2 CGPA (2019–2022)</p>
+            <p>BCA — 8.2 CGPA (2019–2022)</p>
         </div>
     </section>
 
     <!-- Personal Details -->
     <section id="personal" class="section fade">
-        <h2 class="section-title"><i class="fas fa-id-card"></i> Personal Details</h2>
+        <h2 class="section-title"><i class="fas fa-id-card"></i> Personal</h2>
 
         <div class="personal-grid">
             <p><strong>Date of Birth:</strong> 16.08.2001</p>
@@ -143,7 +142,6 @@
     <!-- Contact -->
     <section id="contact" class="section fade">
         <h2 class="section-title"><i class="fas fa-phone"></i> Contact</h2>
-        <p class="contact-text">Feel free to reach out for opportunities or collaborations.</p>
 
         <div class="contact-info">
             <p><i class="fas fa-map-marker-alt"></i> Shabiya ME10, Musaffah, Abu Dhabi</p>
@@ -153,7 +151,7 @@
 
         <div class="social-icons">
             <a href="https://github.com/jaseem16" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://linkedin.com/in/Mohamed Jaseem" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://linkedin.com/in/jas16" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </section>
 
